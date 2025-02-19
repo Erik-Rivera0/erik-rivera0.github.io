@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+<head> SVG Animation </head>
+<title> Animation - Moment </title>
+<body>
+	<h1> Animation </h1>
+	<h3> Circle </h3>
+	<p> Let's move the circle </p>
+	
+		<svg width='400' height='400'>
+			<g>
+				<circle cx='100' cy='100' r='50' stroke='red' fill='blue'> </circle>
+				
+				<animateMotion path='M 0 0 V 0 H 200 Z' dur='1' repeatCount='300' />
+				
+			</g>
+			
+		<svg width='400' height='400'>
+			<g>
+				<circle cx='0' cy='300' r='50' stroke='red' fill='blue'> </circle>
+				
+				<animateMotion path='M 200 50 V 20 H 100 Z' dur='0.7' repeatCount='300' />
+				
+			</g>
+		</svg>
+	<hr>
+	<h2> Moving shape in a square path </h2>
+		<svg width='1500' height='1500'>
+			<g>
+				<rect width='70' height='30' fill='blue' stroke='yellow' stroke-width='2' />
+				<animateMotion path='M 10 10 H 330 V 200 H 0 Z' dur='1s' repeatCount='1000000000000000' />
+			</g>
+			
+	<h1> Solar system </h1>
+		<svg width='2000' height='2000'>
+			<g>
+					<circle cx='20' cy='20' r='12' stroke='red' fill='pink'> </circle>
+					<animateMotion path='M 40 29 H 400 V 300 H 10 Z' dur='0.5s' repeatCount='300' />
+<!-- Starting point, How far should the object go Horizontally, How long should it go vertically, where is the end point-->
+
+			</g>
+			<g>
+					<circle cx='30' cy='30' r='5' stroke='black' fill='blue'> </circle>
+					<animateMotion path='M 0 0 H 400 V 300 H 0 Z' dur='5s' repeatCount='300' />
+<!-- Starting point, How far should the object go Horizontally, How long should it go vertically, where is the end point-->
+
+			</g>
+			<g>
+				<circle cx='30' cy='30' r='30' stroke='blue' fill='yellow'> </circle>
+				<animateMotion path='M 150 150 H 250 V 160 H 260 Z' dur='0.01s' repeatCount='30000000000000000000000000000000000000000' />
+<!-- Starting point, How far should the object go Horizontally, How long should it go vertically, where is the end point-->
+
+			</g>
+		</svg>
+
+</body>
+</html>
